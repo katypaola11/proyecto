@@ -1,0 +1,298 @@
+:root { /*Aqui defenimos variables para utilizar en todo el documennto*/
+    --primary-color: #fcc2c2;
+    --secondary-color: #ddb0b0;
+    --text-color: #333;
+    --light-bg: #fff;
+    --dark-bg: #2c2c2c;
+}
+*{ /*Sirve para seleccionarlos elementos del documento*/
+    margin: 0; /*elimina ek margen predeterminado de los elementos*/
+    padding: 0; /*elimina el relleno*/
+    box-sizing: border-box; /* cambia el modelo de caja para que el ancho y el alto incluyan el borde y el padding*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif; /*tipo de letra*/
+    line-height: 1.6; /*Estableceel tamaño de la fuente*/
+    color: var(--text-color); /*aplica el color de texto definido de la variable*/
+}
+
+/*barra de bavegacion*/
+.header{
+    background-color:white; /*Establece el color de la barra de navegacion*/
+    position: fixed; /*para fijar el encabezado*/
+    width: 100%; /*estable el ancho del encabezado*/
+    top: 0; /*para colocar el encabezado en la parte superior*/
+    z-index: 1000; /*para que el encabezado se superponga a otros elementos*/
+
+}
+.titulo{
+    font-size: 2rem; /*establecer tamaño de fuente*/
+    text-align: center;/*para centrar el texto*/
+    color: var(--primary-color);
+}
+.nav-contenedor{
+    max-width: 1200px; /*establece un ancho maximo de 1200px*/
+    margin: 0 auto; /*centra el contenedor horizontalmente*/
+    padding: 1rem;
+    display: flex;/*se utiliza caja flexible*/
+    justify-content: space-between; /*distribuye el espacio entre cajas*/
+    align-items: center; /*alinea el contenido verticalmente*/
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;/*aplica negrita al texto*/
+    color: var(--primary-color);
+}
+.nav-menu{
+    display: flex;
+    list-style: none;/*elimina los estilos de lista como las viñetas*/
+}
+.nav-menu li{
+    margin-left: 2rem;/*crea espacio entre los elementos del menu*/
+}
+.nav-menu a{
+    text-decoration: none; /*elimina el subrayado de los enlaces o el menu*/
+    color: var(--text-color);
+    font-weight: 500;/*aplica un estilo de letra seminegrita*/
+    /*transition: color 0.3s ease; /*aplica una transicion suave al cambiar el color*/
+}
+.nav-menu a:hover{
+    color: var(--primary-color);
+}
+/*Seccion*/
+.inicio{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /*se aplica un fondo semitransparente sobre la imagen*/
+    background-size: cover; /*asegura que la imagen de fondo cubra toda la seccion*/
+    background-position: center; /*centra la imagen de fondo*/
+    height: 100vh; /*establece la altura de la ventanada del navegador*/
+    display: flex;
+    align-items: center;/*alinear los elementos del contenedor*/
+    flex-direction: column;/*organiza los elementos en columna*/
+    justify-content: center;/*centra los elementos del contenedor*/
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+.contenedor{
+    max-width: 800px;
+    padding: 2rem;    
+}
+.contenedor h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;/*agrega un margen inferior separando el titulo*/
+}
+.contenedor p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;/*agrega un margen inferior separando el parrafo*/
+    margin-bottom: 2rem; 
+}
+.boton1{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer; /*cambia el cursor a una mano*/
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+.boton1:hover{
+    background-color: var(--secondary-color);
+}
+
+/*productos en seccion*/
+.productos-1{
+    background-color:#f9f9f9;
+    padding: 5rem 2rem;
+}
+.productos-1 h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+   
+}
+.produto-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.producto{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.producto:hover{
+    transform: translateY(-5px);
+}
+.producto img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.producto h3{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.producto p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.boton{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+.boton:hover{
+    background-color: var(--secondary-color);
+}
+/*footer*/
+.footer{
+    background-color: var(--dark-bg);
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+}
+.footer-cont{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/*define el diseño de la cuadricula*/
+    gap: 2rem; /*establece espacio en las columnas y filas*/
+}
+.footer-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-sec h3{
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.footer-sec p{
+    margin-bottom: 1rem;
+}
+
+/*Diseño responsivo*/
+@media (max-width: 768px){  /* para darle un diseño responsive a pantallas pequeñas*/
+    .nav-menu{
+        display: none; /*para ocultar la barra de menu*/
+    }
+    .contenedor h2{
+        font-size: 2rem;
+    }
+    .produto-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*se adaptara al tamaño de la pantalla*/
+    }
+    
+}
+
+.header {
+    background-color:#fcc2c2;
+    color: black;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.seccion {
+    margin-bottom: 3rem;
+}
+
+.mision-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.vision {
+    background-color: #fff5f8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.valores-calidad {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.equipo1 {
+    text-align: center;
+}
+
+.equipo1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container {
+    display: flex; /* Activa flexbox */
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo pag d*/
+.header{
+    background-color:var(--primary-color); /*Establece el color de la barra de navegacion*/
+    position: fixed; /*para fijar el encabezado*/
+    width: 100%; /*estable el ancho del encabezado*/
+    top: 0; /*para colocar el encabezado en la parte superior*/
+    z-index: 1000; /*para que el encabezado se superponga a otros elementos*/
+
+}
+
+

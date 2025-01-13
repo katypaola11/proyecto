@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de belleza</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/src/assets/img/cuidado-personal.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            BEAUTY & CARE
+          </a>
+        </div>
+      </nav>
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pag/nosotros.html">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pag/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/src/pag/registro.html">Registro</a>
+          </li>        
+      </ul>
+      <main>
+        <section id="inicio" class="inicio">
+            <div class="contenedor">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/src/assets/img/imagen1.webp" class="d-block w-100" alt="carousel" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/src/assets/img/ca2.png" class="d-block w-100" alt="carousel" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/src/assets/img/car2.webp" class="d-block w-100" alt="carousel">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">siguiente</span>
+                    </button>
+                  </div>
+                <h2>Tu Belleza, Nuesta Pasion</h2>
+                <p>Descubre nuestra exclusiva coleccion de productos de belleza</p>
+                <button onclick="location.href='/src/pag/detalles.html'"class="boton1"> Ver Productos</button>
+            </div>
+        </section>
+        <section id="productos" class="productos-1">
+            <h2>Nuestros Productos</h2>
+            <div class="produto-grid">
+            <div class="producto">
+                <img src="/src/assets/img/kitPersonal.jpg" alt="Kit Personal">
+                <h3>Kit Personal</h3>
+                <p>Descubre nuestro Kit Personal de Belleza</p>
+                <button onclick="location.href='/src/pag/detalles.html'" class="boton">Ver Detalle</button>
+    
+                
+            </div>
+           <div class="producto">
+            <img src="/src/assets/img/cuidadoFacial.jpg" alt="cuidado facial" >
+            <h3>Cuidado Facial</h3>
+            <p>Descubre nuestro cuidado Facial</p>
+            <button class="boton">Ver Detalle</button>
+           </div>
+           <div class="producto">
+            <img src="/src/assets/img/fragancia.jpg" alt="fragancia" >
+            <h3>Fragancia</h3>
+            <p>Descubre nuestra fragancia</p>
+            <button onclick="location.href='/src/pag/detalles.html'" class="boton">Ver Detalle</button>
+           </div>
+        </div>
+        </section>  
+    </main>
+    <footer class="footer">
+
+        <div class="footer-cont">
+            <div class="footer-sec">
+            <h3>BEAUTY & CARE</h3>
+            <p>Tu destino de belleza y cuidado personal</p>
+        </div>
+        <div class="footer-sec">
+            <h3>Contacto</h3>
+            <p>Direccion: Av. 12 de octubre</p>
+            <p>Email: pantoja11@gmail.com</p>
+            <p>Telefono: 0981509368</p>
+        </div>
+        </div>  
+        <br>
+        <div>
+            <p>&copy; 2025 Beauty Care. Todos los derechos reservados</p>
+        </div>
+
+     </footer>
+</body>
+</html>
